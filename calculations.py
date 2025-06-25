@@ -11,6 +11,17 @@ def multiply(a, b):
 
 
 def divide(a, b):
+    """Compute and return the result of divide two numbers with each other.
+    Usage examples:
+    >>> divide(4.0, 2.0)
+    2.0
+    >>> divide(4.0, 0.0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: Cannot divide by zero.
+    """
+    if b == 0.0:
+        raise ZeroDivisionError("Cannot divide by zero.")
     return float(a / b)
 
 
